@@ -1,30 +1,65 @@
-var leapYear = function(year) {
-
-  if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
-    return true;
-  }else{
-    return false;
-  }
-};
+function getVowel(string){
+  var vowel = string.match(/[aeiou]/gi);
+  // alert(vowel.slice(0,1)); //shows firs vowel in the word
+  var firstVowel = vowel.slice(0,1);
+  alert(string.indexOf(firstVowel)); // returns -1 = never occurs, .search() - does same thing
+}
 
 $(document).ready(function() {
   $("form#leap-year").submit(function(event) {
     event.preventDefault();
-    var year = parseInt($("input#year").val());
-    var result = leapYear(year);
 
-    $(".year").text(year);
-if(year !== NaN){
-  if (!result) {
-    $(".not").text("not");
-  } else {
-    $(".not").text("");
-  }
-}else {
-  alert("Enter a valid number");
-}
+  var userInput = $("input#year").val();
+ var inputArray = userInput.split("");
+
+    // translator(userInput);
 
 
-    $("#result").show();
+
+getVowel(userInput);
+
+
+
+
   });
 });
+
+
+
+// Pool    Air    You   Question    Tree
+// oolP-ay irAway ouY-ay  estionQu-ay eeTr-ay
+
+// For words beginning with a vowel
+//For words beginning with one or more consonants
+//If the first consonants include "qu", move the "u" along with the "q".
+//For words beginning with "y", treat "y" as a consonant.
+
+
+
+// var vowels = ['e','i','o','a','u'];
+// // alert(inputArray.indexOf("a"));
+//
+// vowels.forEach(function(vowel) {
+//   if(vowell===inputArray){
+//     alert(userInput.charAt(vowel));
+//   }
+//
+//   //alert(inputArray.indexOf(vowel));
+//
+// });
+
+
+// var vowels = ['e','i','o','a','u'];
+//
+//   vowels.forEach(function(vowel) {
+//     if(vowel === userInput.charAt(0)){
+//       alert(userInput.slice(1) + userInput.charAt(0) + "way");
+//     } else {
+//       if(charAt(1)===vowel){
+//         alert(userInput.slice(1) + userInput.charAt(0) + "ay");
+//       } else {
+//         alert(userInput.slice(userInput.indexOf(vowel)) + userInput.charAt(userInput.indexof(vowel)) + "ay");
+//       }
+//
+//     }
+// });
