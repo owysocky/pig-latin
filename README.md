@@ -12,7 +12,7 @@ _This is a programm that translates your sentance to pig latin_
 | Behavior - Plain English | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **The program does nothing to non-alphabetical characters** | User input: 3 | Output: 3|
-| **If the word starts with a vowel, the program moves the vowel to the end of the word, then adds "way"* | User input: air | Output: "iraway"|
+| **If the word starts with a vowel, the program moves the vowel to the end of the word, then adds "way"**| User input: air | Output: "iraway"|
 | **If the first consonants includes "qu",the program moves the "u" along with the "q", then adds "ay"** | User input: quilt | Output: "iltquay"|
 | **If the word begins with one or more consonants, the program moves all of the first consecutive consonants to the end, then adds "ay".** | User input: tree | Output: "eetray"|
 
