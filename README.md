@@ -1,20 +1,20 @@
-# _Leap Year_
+# _Pig Latin Translator_
 
-#### _Is the year you entered a leap year? 1/21/2019_
+#### _Pig Latin Translator 1/21/2019_
 
 #### By _**Olha Wysocky and Pavel Zanchuk**_
 
 ## Description
 
-_This is a programm that tells wether ot not the input is a leap year_
+_This is a programm that translates your sentance to pig latin_
 
 ### Specs
-| Spec | Input | Output |
+| Behavior - Plain English | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
-| **Program Gathers User Input** | User input: 2004 | Output: "2004 is a leap year" |
-| **Program Gathers User Input** | User input: 2001 | Output: "2001 is not a leap year" |
-
+| **The program does nothing to non-alphabetical characters** | User input: 3 | Output: 3|
+| **If the word starts with a vowel, the program moves the vowel to the end of the word, then adds "way"* | User input: air | Output: "iraway"|
+| **If the first consonants includes "qu",the program moves the "u" along with the "q", then adds "ay"** | User input: quilt | Output: "iltquay"|
+| **If the word begins with one or more consonants, the program moves all of the first consecutive consonants to the end, then adds "ay".** | User input: tree | Output: "eetray"|
 
 ## Technologies Used
 

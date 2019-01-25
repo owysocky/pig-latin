@@ -13,7 +13,7 @@ function translator(string){
     }
 
   } else {
-    alert(string.slice(vowel) + string.charAt() + "ay");
+    alert(string.slice(vowel) + string.charAt(0)+ string.charAt(1) + "ay");
   }
 }
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 // For words beginning with a vowel
 //For words beginning with one or more consonants
-//If the first consonants include "qu", move the "u" along with the "q".
+//If the first consonants includes "qu", move the "u" along with the "q".
 //For words beginning with "y", treat "y" as a consonant.
 
 
