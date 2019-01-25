@@ -1,11 +1,12 @@
 function translator(string){
-  var vowel = string.match(/[aeiou]/gi);
+  var findVowel = string.match(/[aeiou]/gi);
   // alert(vowel.slice(0,1)); //shows firs vowel in the word
-  var firstVowel = vowel.slice(0,1);
-  var a = string.indexOf(firstVowel); // returns -1 = never occurs, .search() - does same thing
-  if(a === 0){
+  var firstVowel = findVowel.slice(0,1);
+  var vowel = string.indexOf(firstVowel); // returns -1 = never occurs, .search() - does same thing
+  if(vowel === 0){
     alert(string.slice(1) + string.charAt(0) + "way");
-  }
+  }else if (vowel === 1)
+    alert(string.slice(1) + string.charAt(0) + "ay");
 }
 
 
