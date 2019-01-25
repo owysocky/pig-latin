@@ -1,9 +1,17 @@
-function getVowel(string){
+function translator(string){
   var vowel = string.match(/[aeiou]/gi);
   // alert(vowel.slice(0,1)); //shows firs vowel in the word
   var firstVowel = vowel.slice(0,1);
-  alert(string.indexOf(firstVowel)); // returns -1 = never occurs, .search() - does same thing
+  var a = string.indexOf(firstVowel); // returns -1 = never occurs, .search() - does same thing
+  if(a === 0){
+    alert(string.slice(1) + string.charAt(0) + "way");
+  }
 }
+
+
+
+
+
 
 $(document).ready(function() {
   $("form#leap-year").submit(function(event) {
@@ -12,11 +20,9 @@ $(document).ready(function() {
   var userInput = $("input#year").val();
  var inputArray = userInput.split("");
 
-    // translator(userInput);
+    translator(userInput);
 
 
-
-getVowel(userInput);
 
 
 
