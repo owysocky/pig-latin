@@ -5,8 +5,16 @@ function translator(string){
   var vowel = string.indexOf(firstVowel); // returns -1 = never occurs, .search() - does same thing
   if(vowel === 0){
     alert(string.slice(1) + string.charAt(0) + "way");
-  }else if (vowel === 1)
-    alert(string.slice(1) + string.charAt(0) + "ay");
+  }else if (vowel === 1){
+    if(string.charAt(0)==="q" && string.charAt(1)==="u"){
+      alert(string.slice(2) + string.charAt(0) + string.charAt(1) + "ay");
+    } else {
+      alert(string.slice(1) + string.charAt(0) + "ay");
+    }
+
+  } else {
+    alert(string.slice(vowel) + string.charAt() + "ay");
+  }
 }
 
 
